@@ -1,9 +1,11 @@
+# ============================================================
+# General Node.js and JavaScript
+# ============================================================
 # Logs
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
@@ -134,3 +136,22 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# ============================================================
+# Expo Specific
+# ============================================================
+# Expo
+.expo/
+web-build/
+expo-env.d.ts
+
+# Native (iOS and Android native code - generally not needed for Expo projects)
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Ignore maps of generated JS files
+*.map
