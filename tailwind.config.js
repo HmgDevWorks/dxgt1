@@ -4,10 +4,9 @@ import gluestackPlugin from '@gluestack-ui/nativewind-utils/tailwind-plugin';
 module.exports = {
   darkMode: "media",
   content: [
-    "App.{tsx,jsx,ts,js}",
-    "index.{tsx,jsx,ts,js}",
-    "components/**/*.{tsx,jsx,ts,js}"
+    './app/**/*.{js,jsx,ts,tsx}',
   ],
+  
   presets: [require('nativewind/preset')],
   safelist: [
     {
@@ -18,6 +17,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "f1-red": '#e10600',
+        "f1-black": '#15151e',
+        "f1-dark-gray": '#1f1f27',
+        "f1-light-gray": '#38383f',
+        "f1-white": '#ffffff',
         primary: {
           0: 'rgb(var(--color-primary-0)/<alpha-value>)',
           50: 'rgb(var(--color-primary-50)/<alpha-value>)',
@@ -172,6 +176,9 @@ module.exports = {
           info: 'rgb(var(--color-indicator-info)/<alpha-value>)',
           error: 'rgb(var(--color-indicator-error)/<alpha-value>)',
         },
+      },
+      fonts: {
+        main: 'TitilliumWeb_400Regular'
       },
       fontFamily: {
         heading: undefined,
