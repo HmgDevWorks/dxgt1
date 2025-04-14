@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import "@/global.css";
-import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
+import { GluestackUIProvider } from "./components/ui/gluestack-ui-provider";
 // import { StyleSheet, Text, View } from 'react-native';
 import { StyleSheet, View } from 'react-native';
 
-import { Card } from "@/components/ui/card"
-import { Heading } from "@/components/ui/heading"
-import { Text } from "@/components/ui/text"
+import { Card } from "./components/ui/card"
+import { Heading } from "./components/ui/heading"
+import { Text } from "./components/ui/text"
 
 export default function App() {
   return (
